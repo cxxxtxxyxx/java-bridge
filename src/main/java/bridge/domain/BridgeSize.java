@@ -10,4 +10,8 @@ public class BridgeSize {
         }
         this.bridgeSize = Integer.parseInt(bridgeSize);
     }
+
+    public int getBridgeSize() {
+        return bridgeSize;
+    }
 }

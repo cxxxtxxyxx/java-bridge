@@ -10,7 +10,9 @@ public class Application {
         // TODO: 프로그램 구현
         InputView inputView = new InputView();
         OutputView outputView = new OutputView();
-        BridgeGameController bridgeGameController = new BridgeGameController(inputView, outputView);
+        BridgeRandomNumberGenerator bridgeRandomNumberGenerator = new BridgeRandomNumberGenerator();
+        BridgeMaker bridgeMaker = new BridgeMaker(bridgeRandomNumberGenerator);
+        BridgeGameController bridgeGameController = new BridgeGameController(inputView, outputView, bridgeMaker);
 
         bridgeGameController.init();
 
